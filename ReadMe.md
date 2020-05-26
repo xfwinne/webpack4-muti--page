@@ -8,7 +8,7 @@
 
 - npm install  &emsp;&emsp;&emsp;  // 安装 `node_modules` , 载入相关依赖；
 
-- npm run dev  &emsp;&emsp;  // 运行本地环境；`访问页面需要网页地址栏进入/pages目录中`
+- npm run dev  &emsp;&emsp;  // 运行本地环境；`访问页面需要网页地址栏进入/pages目录中`，如http://xxx.xxx.x.xxx:xxxx/pages/index.html
 
 - npm run build	 &emsp;&emsp;  // 打包好生产环境代码，并打开文件划分分析图（如果不想生成分析图，就去掉分析插件相关的配置）
 

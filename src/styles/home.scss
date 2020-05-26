@@ -1,0 +1,14 @@
+@import './reset.css';
+@import './iconfont.css';
+body{
+  display: flex;
+  background-image: url('../images/cdnbg.png');
+}
+.home{
+  // background-image: url('../images/404.png');
+  color: rgb(110, 208, 238);
+  span{
+    color: #876;
+    background-image: url('../images/top-arrow.png');
+  }
+}

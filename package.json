@@ -1,0 +1,60 @@
+{
+  "name": "webpack-h5",
+  "version": "1.0.0",
+  "description": "webpac多页面配置",
+  "main": "index.js",
+  "scripts": {
+    "webpack": "webpack --config ./build/webpack.dev.js --display-modules --colors  --display-reasons",
+    "dev": "webpack-dev-server --config ./build/webpack.dev.js --display-modules --colors  --display-reasons --watch",
+    "build": "webpack --config ./build/webpack.prod.js  --colors",
+    "bundle-report": "webpack-bundle-analyzer --port 7777 dist/stats.json",
+    "lint": "eslint --ext .jsx,.js src/",
+    "fix": "eslint --ext .jsx,.js src/  --fix ./src"
+  },
+  "author": "winne",
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.9.6",
+    "@babel/plugin-transform-runtime": "^7.9.6",
+    "@babel/polyfill": "^7.8.7",
+    "@babel/preset-env": "^7.9.6",
+    "autoprefixer": "^9.8.0",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "clean-webpack-plugin": "^3.0.0",
+    "core-js": "^3.6.5",
+    "css-loader": "^3.5.3",
+    "eslint": "^6.8.0",
+    "eslint-config-airbnb-base": "^14.1.0",
+    "eslint-plugin-import": "^2.20.2",
+    "file-loader": "^6.0.0",
+    "glob": "^7.1.6",
+    "html-webpack-plugin": "^4.3.0",
+    "mini-css-extract-plugin": "^0.9.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^8.0.2",
+    "style-loader": "^1.2.1",
+    "transfer-webpack-plugin": "^0.1.4",
+    "url-loader": "^4.1.0",
+    "webpack": "^4.43.0",
+    "webpack-bundle-analyzer": "^3.8.0",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.11.0",
+    "webpack-merge": "^4.2.2"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.26.0",
+    "bootstrap": "^4.5.0",
+    "jquery": "^3.5.1",
+    "popper.js": "^1.16.1"
+  },
+  "browserslist": [
+    "defaults",
+    "> 1%",
+    "last 2 versions",
+    "not ie <= 8",
+    "ios > 7"
+  ]
+}

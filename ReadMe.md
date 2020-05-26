@@ -59,7 +59,9 @@
 -  `js的import路径引入规范` ： 
 
 	脚手架默认配置了@路径别名指向src目录，所以在import引入多层级路径时，直接使用@，如下：
+  
 	`import "@/styles/home.scss";`
+  
 	`import { fn } from "@/utils/tools";`
 
 ## 1.4 其他重要说明

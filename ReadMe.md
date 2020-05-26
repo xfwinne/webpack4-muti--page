@@ -64,13 +64,35 @@
   
 	`import { fn } from "@/utils/tools";`
 
-## 1.4 其他重要说明
+## 1.5 其他重要说明
 
 **1、webpack配置这个多页面的入口文件是动态生成的**
 
   在`src/pages/`目录中的新建的页面如果`需要引入js`的话，一定要在`src/js/`中新建个`同名`的js文件。
+  
   在`src/pages/`目录中的新建的页面如果`不需要引入js`的话，就不用在`src/js/`中新建js文件。
 
 **2、vscode对js代码自动检测是否符合eslint规范**
 
   需要在vscode安装了ESlint插件
+  
+## 1.6 webpack配置实现功能点
+  
+  1、入口js动态导入，而不是引入一大堆script标签
+  
+  2、动态配置生成HTMLWebpackPlugin，而不是写一大堆new HtmlWebpackPlugin()
+  
+  3、实现css分离，公共css单独提取出来，有利于使用缓存。并且自动给css加浏览器兼容性的前缀
+  
+  4、js代码分割，基础库和js公共代码进行分割出来，有利于缓存和减小包大小
+  
+  5、支持es6规范，方便代码编写和模块化开发
+  
+  6、配置vscode编辑器对js代码进行自动校验是否符合eslint规范
+  
+  7、webpack配置分基础配置、开发环境和生产环境配置分离，易于理解
+  
+  
+  
+  
+  

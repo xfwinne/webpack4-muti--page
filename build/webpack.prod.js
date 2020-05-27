@@ -40,7 +40,7 @@ module.exports = merge({
     }),
     new BundleAnalyzerPlugin( // 生成拆分打包图
       {
-        analyzerMode: "disabled",
+        analyzerMode: "disabled", // 不自动打开浏览器，需要配置package.json中用命令打开
         generateStatsFile: true,
         statsOptions: {
           source: false
